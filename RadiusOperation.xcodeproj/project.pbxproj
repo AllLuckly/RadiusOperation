@@ -14,6 +14,9 @@
 		3258CEE01B674DEA00547199 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3258CEDF1B674DEA00547199 /* Images.xcassets */; };
 		3258CEE31B674DEA00547199 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3258CEE11B674DEA00547199 /* LaunchScreen.xib */; };
 		3258CEEF1B674DEA00547199 /* RadiusOperationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3258CEEE1B674DEA00547199 /* RadiusOperationTests.m */; };
+		3258CEFA1B6750D400547199 /* LBRadiusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3258CEF91B6750D400547199 /* LBRadiusView.m */; };
+		3267AE4F1B68932D00178525 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3267AE4E1B68932D00178525 /* 1.png */; };
+		3267AE511B68935500178525 /* liaght@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3267AE501B68935500178525 /* liaght@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		3258CEE81B674DEA00547199 /* RadiusOperationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadiusOperationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3258CEED1B674DEA00547199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3258CEEE1B674DEA00547199 /* RadiusOperationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadiusOperationTests.m; sourceTree = "<group>"; };
+		3258CEF81B6750D400547199 /* LBRadiusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBRadiusView.h; sourceTree = "<group>"; };
+		3258CEF91B6750D400547199 /* LBRadiusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBRadiusView.m; sourceTree = "<group>"; };
+		3267AE4E1B68932D00178525 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		3267AE501B68935500178525 /* liaght@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "liaght@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +88,14 @@
 		3258CED11B674DEA00547199 /* RadiusOperation */ = {
 			isa = PBXGroup;
 			children = (
+				3267AE501B68935500178525 /* liaght@3x.png */,
+				3267AE4E1B68932D00178525 /* 1.png */,
 				3258CED61B674DEA00547199 /* AppDelegate.h */,
 				3258CED71B674DEA00547199 /* AppDelegate.m */,
 				3258CED91B674DEA00547199 /* ViewController.h */,
 				3258CEDA1B674DEA00547199 /* ViewController.m */,
+				3258CEF81B6750D400547199 /* LBRadiusView.h */,
+				3258CEF91B6750D400547199 /* LBRadiusView.m */,
 				3258CEDC1B674DEA00547199 /* Main.storyboard */,
 				3258CEDF1B674DEA00547199 /* Images.xcassets */,
 				3258CEE11B674DEA00547199 /* LaunchScreen.xib */,
@@ -200,8 +211,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3258CEDE1B674DEA00547199 /* Main.storyboard in Resources */,
+				3267AE511B68935500178525 /* liaght@3x.png in Resources */,
 				3258CEE31B674DEA00547199 /* LaunchScreen.xib in Resources */,
 				3258CEE01B674DEA00547199 /* Images.xcassets in Resources */,
+				3267AE4F1B68932D00178525 /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +234,7 @@
 			files = (
 				3258CEDB1B674DEA00547199 /* ViewController.m in Sources */,
 				3258CED81B674DEA00547199 /* AppDelegate.m in Sources */,
+				3258CEFA1B6750D400547199 /* LBRadiusView.m in Sources */,
 				3258CED51B674DEA00547199 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +430,7 @@
 				3258CEF41B674DEA00547199 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3258CEF51B674DEA00547199 /* Build configuration list for PBXNativeTarget "RadiusOperationTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +439,7 @@
 				3258CEF71B674DEA00547199 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
