@@ -9,6 +9,13 @@
 
 #import "LBRadiusView.h"
 
+@interface LBRadiusView()
+{
+    UIImageView *_imgView;
+}
+
+@end
+
 @implementation LBRadiusView
 
 
@@ -27,9 +34,11 @@
     }
     return self;
 }
-
+//实现原理根据改变 三角形的正弦定理 余弦定理
 - (void)starAnimash:(UIImageView *)imgView
 {
+    _imgView = imgView;
+    
     self.center = CGPointMake(_radius * cosf(_angle) + imgView.center.x, _radius * sinf(_angle) + imgView.center.y);
     
     _timer = [NSTimer scheduledTimerWithTimeInterval:_time target:self selector:@selector(moveView) userInfo:nil repeats:YES];
@@ -37,12 +46,8 @@
 
 - (void)moveView
 {
-    
-    //创建通知
-    NSNotification *notification =[NSNotification notificationWithName:@"Skipping" object:nil userInfo:nil];
-    //通过通知中心发送通知
-    [[NSNotificationCenter defaultCenter] postNotification:notification];
-
+    self.angle += M_PI_2/30;
+    self.center = CGPointMake(self.radius * cosf(self.angle) + _imgView.center.x, self.radius * sinf(self.angle) + _imgView.center.y);
 }
 
 
