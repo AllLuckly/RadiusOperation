@@ -42,6 +42,7 @@
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:@"Skipping" object:nil];
+    [v.timer invalidate];
 }
 
 @end
